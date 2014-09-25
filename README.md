@@ -1,6 +1,6 @@
 # ARI Client Wrapper
 
-Wrapper for ari-client that caches clients and Stasis applications after first connecting to an ARI instance and starting a Stasis application. Passing in the same connection information and Stasis application name will return the same client within a given Node.js application.
+Wrapper for [ari-client](http://github.com/asterisk/node-ari-client) that caches clients and Stasis applications after first connecting to an ARI instance and starting a Stasis application. Passing in the same connection information and Stasis application name will return the same client within a given Node.js application.
 
 # Installation
 
