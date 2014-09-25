@@ -36,6 +36,28 @@ describe('wrapper', function() {
     });
   });
 
+  it('should support promise style as well', function(done) {
+    var config = {url: 'http://test', username: 'test', password: 'user'};
+    var stasisAppName = 'test';
+
+    ariWrapper.getClient(config, stasisAppName)
+      .then(function(client) {
+        assert(client);
+        assert(client.testClient === true);
+        return client;
+      })
+      .then(function(client) {
+        return ariWrapper.getClient(config, stasisAppName)
+          .then(function(cachedClient) {
+            assert(client === cachedClient);
+            assert(client);
+            assert(client.testClient === true);
+            done();
+          });
+      })
+      .done();
+  });
+
   it('should return different clients for different apps', function(done) {
     var config = {url: 'http://test', username: 'test', password: 'user'};
     var stasisAppName = 'test';

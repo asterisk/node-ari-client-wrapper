@@ -15,8 +15,22 @@ var ariWrapper = require('ari-client-wrapper');
 var config = {url: 'http://...', username: 'name', password: 'pass'};
 
 ariWrapper.getClient(config, 'stasisAppName', function(err, client) {
-    client.channels.list(function(err, channels) {});
+  // use client
 });
+```
+
+or with promises
+
+```JavaScript
+var ariWrapper = require('ari-client-wrapper');
+var config = {url: 'http://...', username: 'name', password: 'pass'};
+
+ariWrapper.getClient(config, 'stasisAppName')
+  .then(function(client) {
+    // use client
+  })
+  .catch(function(err) {
+  });
 ```
 
 the cache can be cleared entirely or by specific entry
