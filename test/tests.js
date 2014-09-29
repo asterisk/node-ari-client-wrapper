@@ -1,10 +1,10 @@
 /**
- *  ARI client wrapper unit tests.
+ * ARI client wrapper unit tests.
  *
- *  @module tests-context
- *  @copyright 2014, Digium, Inc.
- *  @license Apache License, Version 2.0
- *  @author Samuel Fortier-Galarneau <sgalarneau@digium.com>
+ * @module tests-context
+ * @copyright 2014, Digium, Inc.
+ * @license Apache License, Version 2.0
+ * @author Samuel Fortier-Galarneau <sgalarneau@digium.com>
  */
 
 'use strict';
