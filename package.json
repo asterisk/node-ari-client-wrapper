@@ -18,6 +18,8 @@
   "homepage": "https://github.com/asterisk/node-ari-client-wrapper",
   "dependencies": {
     "ari-client": "^0.1.4",
+    "grunt-mocha-istanbul": "^2.2.0",
+    "istanbul": "^0.3.2",
     "q": "^1.0.1"
   },
   "devDependencies": {
